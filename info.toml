@@ -1,0 +1,11 @@
+[meta]
+name = "Hide Alert"
+author = "DemK"
+category = "Race"
+version = "0.1.0"
+
+[game]
+min_version = "2023-04-28"
+
+[script]
+dependencies = [ "VehicleState" ]
