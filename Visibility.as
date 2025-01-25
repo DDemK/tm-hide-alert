@@ -1,14 +1,24 @@
+// ! From Autohide Opponents
+
+/**
+ * offsets for special user profile and user profile wrapper
+ *
+ * 2023-03-28: {rootMapM.Offset + 0x48, 0, 0x20, 0xA8}, {.., .., 0x18, 0x98}
+ * 2023-04-28: {rootMapM.Offset + 0x48, 0, 0x28, 0xA8}, {.., .., 0x20, 0x98}
+ *
+ * For special interface UI
+ *
+ * 2023-03-28: app.Network, 0x158, (Names: 0x28, UI: 0x1c, 0x3c, 0x40)
+ *
+ */
 // user profile
 uint GhostVisOffset = 0xA8;
-uint SecondaryNameTagVisOffset = 0xC4;
 // user profile wrapper
 uint OpponentVisOffset = 0xA8; // updated 2022-11-21
-// interface UI
-uint UIVisOffset = 0x3c;
-uint UIVisKeyOffset = 0x1c;
+
 // updated 2023-04-28: +0x8 to both.
 uint SpecialUserProfileWrapperOffset = 0x20;
-uint SpecialUserProfileOffset = 0x28;
+
 
 enum OpponentsVisibility { Off = 0, Transparent = 1, Opaque = 2 };
 
